@@ -48,7 +48,7 @@ div {
     background-color: transparent;
     outline: none;
     border: none;
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color);
 }
 .side-input{
     display: block;
@@ -61,7 +61,7 @@ div {
     background-color: transparent;
     outline: none;
     border: none;
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color);
 }
 
 button {
@@ -72,8 +72,8 @@ button {
     margin-top: 1rem;
     padding: 0.50rem 1rem;
     border-radius: 0.5rem;
-    border-style: none;
-    background-color: var(--light-color);
+    border:3px solid var(--light-color);
+    /* background-color: var(--light-color); */
     color: var(--text-color);
     cursor: pointer;
 }
