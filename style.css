@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+
+:root {
+    font-family: 'Cormorant SC', serif;
+    --light-color: #ED944D;
+    --dark-color: #1f2937;
+    --text-color: #FDFBF9;
+}
+
+body{
+    background-color: var(--dark-color);
+    margin: 0;
+}
+
+nav {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    color: var(--text-color);
+}
+
+div {
+    color: var(--text-color);
+    text-align: center;    
+}
+
+.angle-label {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.angle-input {
+    display: block;
+    margin: auto;
+    width: 40%;
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--text-color);
+    font-size: large;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+}
+.side-input{
+    display: block;
+    margin: auto;
+    width: 40%;
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--text-color);
+    font-size: large;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+}
+
+button {
+    display: block;
+    margin: auto;
+    font-family: 'Cormorant SC', serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    background-color: var(--light-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+h1 {
+    color: var(--text-color);
+    text-align: center;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+form {
+    color: var(--text-color);
+    text-align: center;  
+}
+
+.quiz-label {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
