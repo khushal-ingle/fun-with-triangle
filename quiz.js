@@ -2,7 +2,7 @@ const quizForm = document.querySelector(".quiz-form");
 const submitAnswerBtn = document.querySelector("#submit-answer-btn");
 const outputE1 = document.querySelector("#output");
 
-const correctAnswer = ["90°","right angled"];
+const correctAnswer = ["Isosceles triangle","90°","Acute","Equilateral","right angled","2 congruent sides","180 degrees"];
 
 submitAnswerBtn.addEventListener("click",calculateScore);
 
