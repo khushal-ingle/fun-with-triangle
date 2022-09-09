@@ -5,7 +5,7 @@ const outputE1 = document.querySelector("#output");
 
 checkAreaBtn.addEventListener("click", () => {
 
-    if (inputBase.value <= 0 || inputHeight.value <= 0) {
+    if (inputBase.value < 0 || inputHeight.value < 0) {
         outputE1.innerText = "Please enter positive values in the fields.";
     } else if (inputBase.value === "" || inputHeight.value === "") {
         outpuE1t.innerText = "Please enter values in the fields."

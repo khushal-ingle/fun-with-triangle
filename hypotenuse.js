@@ -13,9 +13,7 @@ function calculateHypotenuse() {
     if (Number(value1) < 0 || Number(value2) < 0) {
         outputE1.innerText = "Please enter positive values in the fields.";
     } 
-    // else if (Number(value1) == 0|| Number(value2) == 0) {
-    //     outputE1.innerText = "Please enter positive values in the fields. change"
-    // } 
+
     else if (value1 === "" || value2 === "" ) {
         outputE1.innerText = "Please enter values in the fields."
     } else {
