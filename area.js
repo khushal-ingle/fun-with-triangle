@@ -10,8 +10,14 @@ checkAreaBtn.addEventListener("click", () => {
     } else if (inputBase.value === "" || inputHeight.value === "") {
         outpuE1t.innerText = "Please enter values in the fields."
     } else {
-        var area = (inputBase.value * inputHeight.value) / 2;
-        outputE1.innerText = "The area of the triangle is " + area + "cm²";
+        if (Number(value1) !== 0 && Number(value2) !== 0) {
+
+            var area = (inputBase.value * inputHeight.value) / 2;
+            outputE1.innerText = "The area of the triangle is " + area + "cm²";
+        }
+        else {
+            outputE1.innerText = "value should be greater than 0."
+        }
     }
 
 });
