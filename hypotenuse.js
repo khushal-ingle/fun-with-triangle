@@ -10,8 +10,10 @@ function calculateSumOfSquare(a, b) {
 function calculateHypotenuse() {
     const value1 = sides[0].value;
     const value2 = sides[1].value;
-    if (Number(value1) <= 0 || Number(value2) <= 0) {
+    if (Number(value1) < 0 || Number(value2) < 0) {
         outputE1.innerText = "Please enter positive values in the fields.";
+    } else if (Number(value1) == 0|| Number(value2) == 0) {
+        outputE1.innerText = "Please enter positive values in the fields. change"
     } else if (value1 === "" || value2 === "") {
         outputE1.innerText = "Please enter values in the fields."
     } else {
