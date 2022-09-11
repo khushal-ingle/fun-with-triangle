@@ -5,19 +5,22 @@ const outputE1 = document.querySelector("#output");
 
 checkAreaBtn.addEventListener("click", () => {
 
-    if (inputBase.value < 0 || inputHeight.value < 0) {
-        outputE1.innerText = "Please enter positive values in the fields.";
-    } else if (inputBase.value === "" || inputHeight.value === "") {
-        outpuE1t.innerText = "Please enter values in the fields."
-    } else {
-        if (Number(value1) !== 0 && Number(value2) !== 0) {
 
+
+    if (inputBase.value < 0 || inputHeight.value < 0) {
+
+        showMsg("Please enter positive values in the fields.");
+    } else if (inputBase.value === "" || inputHeight.value === "" || inputBase.value == 0 || inputHeight.value == 0) {
+        showMsg("Field should not be empty or equal to 0.");
+    } else {
             var area = (inputBase.value * inputHeight.value) / 2;
-            outputE1.innerText = "The area of the triangle is " + area + "cm²";
-        }
-        else {
-            outputE1.innerText = "value should be greater than 0."
-        }
+            showMsg("The area of the triangle is " + area + "cm²");
     }
 
+    
+
 });
+
+function showMsg(massage) {
+    outputE1.innerText = massage;
+}

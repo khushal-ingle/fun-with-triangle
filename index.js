@@ -14,10 +14,10 @@ function isTriangle() {
 
   if (Number(value1) < 0 || Number(value2) < 0 || Number(value3) < 0) {
 
-    outputE1.innerText = "Please enter positive values in the fields.";
+    showMsg("Please enter positive values in the fields.");
 
   } else if (value1 === "" || value2 === "" || value3 === "") {
-    outputE1.innerText = "Please enter values in the fields.";
+    showMsg("Please enter values in the fields.");
   } else {
 
     if (Number(value1) !== 0 && Number(value2) !== 0 && Number(value3) !== 0) {
@@ -26,14 +26,20 @@ function isTriangle() {
 
       if (sumOfAngles == 180) {
         //  console.log("yay, The angles form a triangle");
-        outputE1.innerText = "Yay, The angles form a triangle";
+        showMsg("Yay, The angles form a triangle");
       } else {
         // console.log("Oh Oh! The angles don't form a triangle");
-        outputE1.innerText = "Oh Oh! The angles don't form a triangle";
+        showMsg("Oh Oh! The angles don't form a triangle");
       }
     } else {
-      outputE1.innerText = "value should be greater than 0."
+      showMsg("value should be greater than 0.");
     }
   }
 }
+
+
+function showMsg(massage) {
+  outputE1.innerText=massage;
+}
+
 isTriangleBtn.addEventListener("click", isTriangle)
